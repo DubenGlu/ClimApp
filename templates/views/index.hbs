@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimApp</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <img src="./Images/clima.png" alt="weather" class="weather-icon-header">
+            <h1>{{title}}</h1>
+        </div>
+
+
+        <p>Coloca el nombre de una ciudad para obtener su informacion del clima actual</p>
+
+        <div class="search-box">
+            <input id="city" type="text" placeholder="Ingrese el nombre de una ciudad...">
+
+            <button id="search">
+                Buscar
+            </button>
+        </div>
+
+        <div id="weather" class="weather-card">
+
+            <h2>Informacion del clima</h2>
+
+            <span class="weather-info-inicial">La informacion del clima aparecera aqui.</span>
+
+        </div>
+
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+
+</body>
+
+</html>
